@@ -401,7 +401,7 @@ h3 {
 @media (max-width: 480px) {
 
     .titulo {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -755,5 +755,6 @@ iframe {
     .tarjeta h3 {
         margin-top: 0px;
         margin-bottom: 0px;
+        font-size: 1rem;
     }
 }
