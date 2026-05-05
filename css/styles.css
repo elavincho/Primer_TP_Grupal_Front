@@ -176,7 +176,7 @@ header {
 
   .two-columns {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 0.5fr 1.5fr;
   }
 
   .nav-list {
