@@ -170,7 +170,7 @@ body {
     color: white;
     padding: 1rem;
     padding: 0px;
-    border: solid 1px red;
+    border: solid 1px var(--terminal-green);
     border-radius: 5px;
     padding: 10px;
   }

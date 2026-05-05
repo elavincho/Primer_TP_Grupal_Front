@@ -176,6 +176,7 @@ header {
 
   .two-columns {
     display: grid;
+    min-width: 250px;
     grid-template-columns: 0.5fr 1.5fr;
   }
 

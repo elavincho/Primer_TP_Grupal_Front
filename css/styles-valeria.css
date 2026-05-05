@@ -142,7 +142,8 @@ a {
 
   .two-columns {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    min-width: 250px;
+    grid-template-columns: 0.5fr 1.5fr;
   }
 
   .nav-list {
