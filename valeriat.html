@@ -28,6 +28,47 @@
         </nav>
     </header>
 
+    <!-- <<< ----------- * ----------- Header Celular ----------- * ----------- >>> -->
+
+    <!-- <<< ----------- Menu Hamburguesa ----------- >>> -->
+
+    <header class="two-columns">
+        <a href="index.html" class="oculto logo">404_SOLUTIONS_</a>
+        <div class="menu-hamburguesa">
+            <!-- <<< ----------- Boton Menu Hamburguesa ----------- >>> -->
+            <button id="abrir" class="abrir-menu"><img class="img-abrir" src="/img/iconos-mario/menu.png"
+                    alt="menu"></button>
+            <nav class="nav" id="nav">
+                <button id="cerrar" class="cerrar-menu"><img class="img-cerrar" src="/img/iconos-mario/cerrar.png"
+                        alt="cerrar"></button>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="two-columns"><img class="img-ico"
+                                src="/img/iconos-mario/boton-de-inicio.png" alt="inicio">Inicio</a></li>
+                </ul>
+                <ul class="nav-list">
+                    <li><a href="bitacora.html" class="two-columns"><img class="img-ico"
+                                src="/img/iconos-mario/editar.png" alt="bitacora">Bitácora</a></li>
+                </ul>
+                <ul class="nav-list">
+                    <li><a href="#sobre-mi" class="two-columns"><img class="img-ico" src="/img/iconos-mario/usuario.png"
+                                alt="sobre-mi">Sobre Mí</a></li>
+                </ul>
+                <ul class="nav-list">
+                    <li><a href="#peliculas" class="two-columns"><img class="img-ico" src="/img/iconos-mario/movie.png"
+                                alt="movie">Peliculas</a></li>
+                </ul>
+                <ul class="nav-list">
+                    <li><a href="#habilidades" class="two-columns"><img class="img-ico"
+                                src="/img/iconos-mario/colaboracion.png" alt="habilidades">Habilidades</a></li>
+                </ul>
+                <ul class="nav-list">
+                    <li><a href="#discos" class="two-columns"><img class="img-ico" src="/img/iconos-mario/musica.png"
+                                alt="musica">Discos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <main class="profile-main">
         <article class="profile-card">
             <div class="terminal-header">
@@ -37,7 +78,7 @@
                 <span class="title">user_profile.sh</span>
             </div>
 
-            <div class="profile-content">
+            <div class="profile-content" id="sobre-mi">
                 <div class="profile-header-flex">
                     <div class="profile-image">
                         <!-- Imagen de perfil -->
@@ -63,7 +104,7 @@
                         construyo soluciones que tengan un impacto real y atrativo.
                         <br>
                     </p>
-                    <h2>Habilidades_</h2>
+                    <h2 id="habilidades">Habilidades_</h2>
                     <ul class="skills">
                         <li>HTML / CSS3 / JS</li>
                         <li>REACT / NODEJS</li>
@@ -73,7 +114,7 @@
                     </ul>
 
                     <!-- PELICULAS -->
-                    <section class="media-section">
+                    <section class="media-section" id="peliculas">
                         <h2>Películas Favoritas_</h2>
                         <div class="contenedor-peliculas">
                             <iframe src="https://www.youtube.com/embed/Lv4BNEn4kKo?si=mV__HEcEmaM6HnUl"
@@ -151,7 +192,7 @@
                     </section>
 
                     <!-- MUSICA -->
-                    <section class="media-section">
+                    <section class="media-section" id="discos">
                         <h2>Discos Favoritos_</h2>
                         <div class="carrusel-container">
                             <button class="carrusel-btn prev" aria-label="Anterior">&lt;</button>

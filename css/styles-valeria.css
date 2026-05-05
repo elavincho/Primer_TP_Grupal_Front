@@ -72,6 +72,132 @@ a {
   box-shadow: 0 0 10px var(--terminal-green);
 }
 
+/* Menu Hamburguesa */
+.dos-columnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+
+  .menu-hamburguesa,
+  .oculto {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    display: none;
+  }
+
+  .menu-hamburguesa {
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+  }
+
+  .img-ico {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    filter: brightness(0) invert(1);
+  }
+
+  .two-columns {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
+  }
+
+  .nav {
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0.5rem;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: var(--bg-color);
+    padding: 15px;
+    box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, 0.7);
+  }
+
+  .nav.visible {
+    z-index: 100;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .two-columns {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    text-align: right;
+    gap: 1rem;
+    right: 1px;
+    font-size: 20px;
+  }
+
+  .nav-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    padding: 0px;
+    border: solid 1px var(--terminal-green);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .nav-list li a:hover {
+    background-color: rgba(204, 204, 204, 0.7);
+  }
+
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0px;
+    font-size: 1.25rem;
+    background-color: transparent;
+  }
+
+  .abrir-menu {
+    color: black;
+  }
+
+  .cerrar-menu {
+    color: white;
+  }
+
+  .img-abrir {
+    width: 35px;
+    height: 35px;
+  }
+
+  .img-cerrar {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 /* =============================================
    TARJETA DE PERFIL (TERMINAL)
    ============================================= */
